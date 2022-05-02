@@ -14,6 +14,7 @@ CropDB::CropDB(){
     numCrops = 0;
     readFile("cropTiny.txt");
     delete [] crops;
+    
 }
 void CropDB::expand() {
    CropInfo *temp = new CropInfo[numCrops + 1];
