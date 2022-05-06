@@ -13,7 +13,7 @@ CropDB::CropDB(){
     crops = nullptr;
     numCrops = 0;
     readFile("cropTiny.txt");
-    delete [] crops;
+    
     
 }
 void CropDB::expand() {
@@ -239,4 +239,7 @@ void CropDB::readFile(const char fileName[]) {
     if (numCrops == 0) {
         cout << "There is no crop data in " << fileName << " did you spell it correctly?" << endl;
     }
+}
+CropDB::~CropDB(){
+  delete [] crops;
 }

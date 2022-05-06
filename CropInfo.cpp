@@ -10,8 +10,8 @@ CropInfo::CropInfo(){
     cropCode = 0;
     name = nullptr;
     yieldsByYear = new double[NUM_YEARS];
-    for (int index = 0; index < NUM_YEARS; index++) {
-        yieldsByYear[index] = 0;
+    for(int index = 0; index < NUM_YEARS; index++){
+    yieldsByYear[index] = 0;
     }
     
 }

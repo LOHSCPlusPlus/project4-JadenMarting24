@@ -4,7 +4,7 @@
 class CropDB {
     public:
         CropDB();
-        
+        ~CropDB();
         void reload();
         void printToFile();
         void insert();
